@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>Application</title>
+	</head>
+	<body>
+		<!-- application and parametrs must be encoded in the base64, parameters need not be specified. The necessary application must necessarily be in the list of allowed applications on the server side otherwise the server will completely ignore them -->
+		<a href="http://localhost:8085/?application=QzpcV2luZG93c1xTeXN0ZW0zMlxub3RlcGFkLmV4ZQ==&parametrs=L0EgQzpcdGVzdDEudHh0">Launch</a><br> <!-- application=C:\Windows\System32\notepad.exe&parametrs=/A C:\test1.txt -->
+		<p>
+		<form action="http://localhost:8085/" method="post">
+			<input type="hidden" name="application" value="QzpcV2luZG93c1xTeXN0ZW0zMlxub3RlcGFkLmV4ZQ=="><br> <!-- C:\Windows\System32\notepad.exe -->
+			<input type="hidden" name="parametrs" value="L0EgQzpcdGVzdDIudHh0"><br> <!-- /A C:\test2.txt -->
+			<input type="submit" value="Launch">
+		</form>
+	</body>
+</html>
